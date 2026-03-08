@@ -1,0 +1,6 @@
+{
+  "name": "Pocket 3 Stylus Fix",
+  "description": "Adds a rotation toggle to Quick Settings which correctly updates the stylus configuration.",
+  "uuid": "pocket3-stylus-fix@aidenfoxx.github.com",
+  "shell-version": ["49"]
+}

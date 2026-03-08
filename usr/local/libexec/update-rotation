@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "Please specify calibration matrix"
+  exit 1
+fi
+
+cat > "/etc/udev/rules.d/99-stylus-calibration.rules" <<EOF
+ACTION=="add|change", KERNEL=="event[0-9]*", ATTRS{name}=="GXTP7380:00 27C6:0113 Stylus", ENV{LIBINPUT_CALIBRATION_MATRIX}="$1"
+EOF
+
+# Disconnect device to trigger update
+echo remove | tee /sys/class/input/event10/uevent > /dev/null
+echo add | tee /sys/class/input/event10/uevent > /dev/null
