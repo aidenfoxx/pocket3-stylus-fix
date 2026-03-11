@@ -20,7 +20,7 @@ mkdir -p ~/.local/share/gnome-shell/extensions/
 cp -r pocket3-stylus-fix@aidenfoxx.github.com ~/.local/share/gnome-shell/extensions/
 ```
 
-Then simply restart GNOME Shell and enable the extension with [Extension Manager](https://flathub.org/en/apps/com.mattjakeman.ExtensionManager), or with the command: 
+Then restart GNOME Shell and enable the extension with [Extension Manager](https://flathub.org/en/apps/com.mattjakeman.ExtensionManager), or with the command: 
 
 ```bash
 gnome-extensions enable pocket3-stylus-fix@aidenfoxx.github.com
