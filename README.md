@@ -6,7 +6,7 @@ This extension is provided as is, and may not be compatible with all distros.
 
 ## Installation
 
-Run the following commands from the root of this repository to install the extension:
+Run the following commands from the repository root to install the extension:
 
 ```bash
 # Copy scripts and configs
