@@ -1,6 +1,6 @@
 # GPD Pocket 3 Stylus Fix
 
-By default, the stylus configuration for the GPD Pocket 3 on Linux is incorrectly rotated 90 degrees. This GNOME extension adds a Quick Settings toggle to rotate the display and correctly update the stylus orientation.
+By default, the stylus configuration for the GPD Pocket 3 on Linux is incorrectly rotated 90 degrees. This GNOME extension adds a Quick Settings toggle to rotate the display and correctly configure the stylus orientation.
 
 This extension is provided as is, and may not be compatible with all distros.
 
