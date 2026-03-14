@@ -92,7 +92,7 @@ const RotateToggle = GObject.registerClass(
         });
 
         try {
-          GLib.spawn_command_line_async(`sudo -n ${SCRIPT_PATH} ${portrait ? MATRIX_PORTRAIT : MATRIX_LANDSCAPE}`);
+          GLib.spawn_command_line_async(`sudo -n ${SCRIPT_PATH} "${portrait ? MATRIX_PORTRAIT : MATRIX_LANDSCAPE}"`);
           this._proxy.ApplyMonitorsConfigRemote(serial, 1, updatedLogical, {});
         } catch (e) {
           console.error(`Failed to update rotation: ${e.message}`);
